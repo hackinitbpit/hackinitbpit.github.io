@@ -18,7 +18,13 @@
     <!-- Color Scheme CSS -->
     <link rel="stylesheet" href="assets/css/theme.css" id="theming">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <style>
+       @media(max-width:767px){
+        .topImage{
+            padding-top: 40px;
+        }
+       }
+    </style>
 </head>
 
 <body class="nk-body body-wider bg-theme">
@@ -78,7 +84,7 @@
                                     </li>
 
                                     <li class="menu-item ">
-                                        <a class="menu-link nav-link menu-toggle" href="#contact">Conatct</a>
+                                        <a class="menu-link nav-link menu-toggle" href="#contact">Contact</a>
                                     </li>
                                 </ul>
 
@@ -95,7 +101,7 @@
                     <div class="container container-xxl">
                         <div class="row align-items-center justify-content-center justify-content-lg-between gutter-vr-30px">
                             <div class="col-lg-6 order-lg-last">
-                                <div class="banner-gfx banner-gfx-auto animated" data-animate="fadeInUp" data-delay=".7">
+                                <div class="banner-gfx banner-gfx-auto animated topImage" data-animate="fadeInUp" data-delay=".7">
                                     <img src="img/ok.png" alt="header">
                                 </div>
                             </div><!-- .col -->
@@ -1157,6 +1163,12 @@
                                                             <span>+91 8860429500</span>
                                                         </div>
                                                     </li>
+                                                    <li class="animated" data-animate="fadeInUp" data-delay="0.2">
+                                                        <em class="contact-icon fas fa-phone"></em>
+                                                        <div class="contact-text">
+                                                            <span>+91 9582537566</span>
+                                                        </div>
+                                                    </li>
                                                     <li class="animated" data-animate="fadeInUp" data-delay="0.3">
                                                         <em class="contact-icon fas fa-envelope"></em>
                                                         <div class="contact-text">
@@ -1327,8 +1339,8 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="assets/js/jquery.bundle.js?ver=161"></script>
-    <script src="assets/js/scripts.js?ver=161"></script>
+    <script src="assets/js/jquery.bundle.js"></script>
+    <script src="assets/js/scripts.js"></script>
     <script src="assets/js/charts.js"></script>
 </body>
 
