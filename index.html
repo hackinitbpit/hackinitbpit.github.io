@@ -2,7 +2,7 @@
 <html lang="zxx" class="js">
 
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
     <meta name="author" content="HackInit">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -23,7 +23,11 @@
   display: flex;
   flex-wrap: nowrap;
 }
-
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
 .flex-container > div {
   margin: 10px;
   text-align: center;
@@ -130,9 +134,17 @@
 
                                         HackInit is <b>CSI and BOSC's</b> flagship event to be hosted in <b>BPIT</b>.
                                     </p>
-                                    <div class="cpn-action animated fadeInUp" data-animate="fadeInUp" data-delay="1"
+                                    <style>
+                                    .devp:hover .devlogo:hover svg{
+                                        fill:blue!important;
+                                    }
+                                    svg{
+                                        fill:#f1f1f1;
+                                    } 
+                                    </style>
+                                    <div class="cpn-action animated fadeInUp devp" data-animate="fadeInUp" data-delay="1"
                                         style="visibility: visible; animation-delay: 1s;">
-                                        <a class="btn" href="#">Registration Opening Soon</a>
+                                        <button class="btn devlogo" id="devfolio-apply-now" ><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px;fill:#f1f1f1"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z"></path><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"></path></svg>Apply with Devfolio</button>
                                     </div>
                                 </div>
                             </div><!-- .col -->
@@ -712,21 +724,21 @@
                         <div class="container container-xxl">
                             <div class="nk-block">
                                 <div class="has-carousel carousel-nav-center" data-items="4" data-navs="true">
-                                        
                                     <div class="item animated" data-animate="fadeInUp" data-delay="0.7">
-                                                <div class="team team-s2 team-odd">
-                                                    <div class="team-photo team-photo-s2">
-                                                        <img src="img/Arpit_choudary1.jpg" alt="">
-                                                    </div>
-                                                    <h5 class="team-name title title-md">Arpit Choudary</h5>
-                                                    <!-- <span class="team-position">CEO &amp; Lead Blockchain</span>
-                                                                <ul class="team-social team-social-s2">
-                                                                    <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                                                    <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                                                                    <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                                                                </ul> -->
-                                                            </div>
+                                        <div class="team team-s2 team-odd">
+                                            <div class="team-photo team-photo-s2">
+                                                <img src="img/PrachiBajaj.jpg" alt="">
                                             </div>
+                                            <h5 class="team-name title title-md">Prachi Bajaj</h5>
+                                            <!-- <span class="team-position">CEO &amp; Lead Blockchain</span>
+                                                    <ul class="team-social team-social-s2">
+                                                        <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                                        <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                                                        <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                                                    </ul> -->
+                                        </div>
+                                    </div>
+
                                             <div class="item animated" data-animate="fadeInUp" data-delay="0.5">
                                                     <div class="team team-s2 team-even">
                                                         <div class="team-photo team-photo-s2">
@@ -773,8 +785,54 @@
                                                         </div>
                                                     </div>
 
+                                                    <div class="item animated" data-animate="fadeInUp" data-delay="0.7">
+                                                            <div class="team team-s2 team-even">
+                                                                <div class="team-photo team-photo-s2">
+                                                                    <img src="img/Arpit_choudary1.jpg" alt="">
+                                                                </div>
+                                                                <h5 class="team-name title title-md">Arpit Choudary</h5>
+                                                                <!-- <span class="team-position">CEO &amp; Lead Blockchain</span>
+                                                                            <ul class="team-social team-social-s2">
+                                                                                <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                                                                <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                                                                                <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                                                                            </ul> -->
+                                                                        </div>
+                                                        </div>
+
+                                    <div class="item animated" data-animate="fadeInUp" data-delay="0.6">
+                                        <div class="team team-s2 team-even">
+                                            <div class="team-photo team-photo-s2">
+                                                <img src="img/Shruti_Dhankar.jpg" alt="">
+                
+                                            </div>
+                                            <h5 class="team-name title title-md">Shruti Dhankar</h5>
+                                            <!-- <span class="team-position">Blockchain App Developer</span>
+                                                        <ul class="team-social team-social-s2">
+                                                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                                                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                                                        </ul> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="item animated" data-animate="fadeInUp" data-delay="0.7">
+                                            <div class="team team-s2 team-odd">
+                                                <div class="team-photo team-photo-s2">
+                                                    <img src="img/Jalaj_Khurana4.jpg" alt="">
+                                                </div>
+                                                <h5 class="team-name title title-md">Jalaj Khurana</h5>
+                                                <!-- <span class="team-position">CEO &amp; Lead Blockchain</span>
+                                                            <ul class="team-social team-social-s2">
+                                                                <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                                                <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                                                                <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                                                            </ul> -->
+                                            </div>
+                                        </div>
+
                                             <div class="item animated" data-animate="fadeInUp" data-delay="0.7">
-                                                    <div class="team team-s2 team-odd">
+                                                    <div class="team team-s2 team-even">
                                                         <div class="team-photo team-photo-s2">
                                                             <img src="img/Gurpreet_singh.jpg"alt="">
                                                         </div>
@@ -803,21 +861,6 @@
                                                         </div>
                                                     </div>
 
-                                                <div class="item animated" data-animate="fadeInUp" data-delay="0.7">
-                                                        <div class="team team-s2 team-even">
-                                                            <div class="team-photo team-photo-s2">
-                                                                <img src="img/Jalaj_Khurana4.jpg" alt="">
-                                                            </div>
-                                                            <h5 class="team-name title title-md">Jalaj Khurana</h5>
-                                                            <!-- <span class="team-position">CEO &amp; Lead Blockchain</span>
-                                                                        <ul class="team-social team-social-s2">
-                                                                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                                                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                                                                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                                                                        </ul> -->
-                                                        </div>
-                                                    </div>
-
                                                     <div class="item animated" data-animate="fadeInUp" data-delay="0.7">
                                                             <div class="team team-s2 team-odd">
                                                                 <div class="team-photo team-photo-s2">
@@ -833,37 +876,21 @@
                                                             </div>
                                                         </div>
 
+                                                    <div class="item animated" data-animate="fadeInUp" data-delay="0.7">
+                                                            <div class="team team-s2 team-even">
+                                                                <div class="team-photo team-photo-s2">
+                                                                    <img src="img/Mohini.jpeg" alt="">
+                                                                </div>
+                                                                <h5 class="team-name title title-md">Mohini Vaish</h5>
+                                                                <!-- <span class="team-position">CEO &amp; Lead Blockchain</span>
+                                                                            <ul class="team-social team-social-s2">
+                                                                                <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+                                                                                <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
+                                                                                <li><a href="#"><em class="fab fa-twitter"></em></a></li>
+                                                                            </ul> -->
+                                                            </div>
+                                                        </div>
 
-                                        <div class="item animated" data-animate="fadeInUp" data-delay="0.7">
-                                                <div class="team team-s2 team-odd">
-                                                    <div class="team-photo team-photo-s2">
-                                                        <img src="img/PrachiBajaj.jpg" alt="">
-                                                    </div>
-                                                    <h5 class="team-name title title-md">Prachi Bajaj</h5>
-                                                    <!-- <span class="team-position">CEO &amp; Lead Blockchain</span>
-                                                            <ul class="team-social team-social-s2">
-                                                                <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                                                <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                                                                <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                                                            </ul> -->
-                                                </div>
-                                            </div>
-
-                                    <div class="item animated" data-animate="fadeInUp" data-delay="0.6">
-                                        <div class="team team-s2 team-even">
-                                            <div class="team-photo team-photo-s2">
-                                                <img src="img/Shruti_Dhankar.jpg" alt="">
-                
-                                            </div>
-                                            <h5 class="team-name title title-md">Shruti Dhankar</h5>
-                                            <!-- <span class="team-position">Blockchain App Developer</span>
-                                                        <ul class="team-social team-social-s2">
-                                                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                                                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                                                        </ul> -->
-                                        </div>
-                                    </div>
                         
                                     <div class="item animated" data-animate="fadeInUp" data-delay="0.7">
                                             <div class="team team-s2 team-even">
@@ -880,20 +907,7 @@
                                             </div>
                                         </div>
 
-                                    <div class="item animated" data-animate="fadeInUp" data-delay="0.7">
-                                        <div class="team team-s2 team-odd">
-                                            <div class="team-photo team-photo-s2">
-                                                <img src="img/Mohini.jpeg" alt="">
-                                            </div>
-                                            <h5 class="team-name title title-md">Mohini Vaish</h5>
-                                            <!-- <span class="team-position">CEO &amp; Lead Blockchain</span>
-                                                        <ul class="team-social team-social-s2">
-                                                            <li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
-                                                            <li><a href="#"><em class="fab fa-linkedin-in"></em></a></li>
-                                                            <li><a href="#"><em class="fab fa-twitter"></em></a></li>
-                                                        </ul> -->
-                                        </div>
-                                    </div>
+                              
                                                
                                 </div>
                             </div>
@@ -922,22 +936,37 @@
                     </div> -->
                     <br>
                     <br>
-                    
                     <br>
                     <div class="row">
-                        <div class="col-md-6"><a target="_blank"href="https://codingblocks.com/"><img  width="500" src="img/sponsors/Logo_White_ NoShadow.png" alt=""></a></div>  
-                        <div class="col-md-6"><a target="_blank"href="https://github.com/"><img width="400"  src="img/sponsors/GitHub_Logo_White.png" alt=""></a></div>  
-
-                    </div>
-                    <br><br><br><br>
-                    <div class="flex-container">
-                       
-                            <div> <a target="_blank"href="https://www.scriptindia.org"><img width="250px"src="img/sponsors/script.png" alt=""></a><br></div>
-                        <div><a target="_blank"href="https://rosenfeldmedia.com/"><img width="250px" src="img/sponsors/Rosenfeld.png" alt="" class="mr-3"></a></div>
-                        <div><a target="_blank"href="https://www.sketch.com/"><img width="250px" src="img/sponsors/sketch.PNG" alt=""></a></div>
-                        <div><a target="_blank"href="https://www.inkubics.com"><img  width="272px" src="img/sponsors/incubics.png" alt=""></a></div>  
+                            <div class="col-md-4"><a target="_blank" href="https://github.com/"><img width="250px"  src="img/sponsors/GitHub_Logo_White.png" alt=""></a></div>  <br><br><br><br>
+                            <div class="col-md-4 center"><a target="_blank" href="https://devfolio.co/"><img width="250" src="img/sponsors/devfolio_logo.svg" alt=""></a></div><br><br><br><br>
+                            <div class="col-md-4"><a target="_blank" href="https://codingblocks.com/"><img width="250px" src="img/sponsors/Logo_White_ NoShadow.png" alt=""></a></div> <br><br><br><br> 
                         
-                      </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 center"> <a target="_blank" href="https://matic.network/"><img width="250px" src="img/sponsors/Matic_Logo-Light.png" alt=""></a></div><br><br><br><br>
+                        <div class="col-md-4 center"><a target="_blank" href="https://www.gitkraken.com/"><img  width="250px" src="img/sponsors/gitkraken_logo.png" alt="" class="mr-3"></a></div><br><br><br><br>
+                        <div class="col-md-4 center"><a target="_blank" href="https://www.gatsbyjs.org/"><img width="250px"  src="img/sponsors/Gatsby_Logo_White.png" alt=""></a></div><br><br><br><br>   
+                    </div>
+                    <div class="row">
+                            <div class="col-md-4 center"><a target="_blank"href="https://www.sketch.com/"><img width="300px" src="img/sponsors/sketch.PNG" alt=""></a></div><br><br><br><br> 
+                            <div class="col-md-4 center"><a target="_blank"href="https://www.creative-tim.com/"><img  src="img/sponsors/tim_logo.png" alt=""></a></div><br><br><br><br>  
+                            <div class="col-md-4 center"><a target="_blank" href="https://www.wolframalpha.com/"><img width="170px" src="img/sponsors/wolfman.png" alt=""></a></div><br><br><br><br>
+                          
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                            <div class="col-md-4 center"><a target="_blank" href="https://www.inkubics.com"><img width="170px" src="img/sponsors/inkubics.png" alt=""></a></div><br><br><br><br>
+                            <div class="col-md-4 center"> <a target="_blank" href="https://www.scriptindia.org"><img width="150px" src="img/sponsors/script.png" alt=""></a><br></div><br><br><br><br>
+                        <div class="col-md-4 center"><a target="_blank" href="https://rosenfeldmedia.com/"><img  width="300px" src="img/sponsors/Rosenfeld.png" alt="" class="mr-3"></a></div><br><br><br><br>
+                    </div>
+
+                       
+                           
+                        
+                    
                          <!-- <ul class="has-carousel partner-list justify-content-center animated" data-items="7" data-items-mobile="2" data-auto="true" data-loop="true" data-animate="fadeInUp" data-delay="0.75"> -->
                             
                            
@@ -1352,15 +1381,13 @@
                                                 <li><a href="https://github.com/Bpitorg"><em class="fab fa-github"></em></a></li>
                                             </ul>
                                         </div>
-                                    </div>
+                                       
                                 </div><!-- .block @e -->
                             </div>
                         </section>
 
                     
                 <!-- // -->
-
-    </div>
 
 
 
@@ -1443,19 +1470,20 @@
                 <div class="row gutter-vr-10px">
                     <div class="col-lg-6 order-lg-last text-lg-right">
                         <ul class="footer-nav">
-                             <!-- <li><a href="#">Code of Conduct</a></li> -->
-                                <!-- <li><a href="#">Terms of sales</a></li>  -->
+                                <div class="copyright-text copyright-text-s2">© HACKINIT 2019 ALL RIGHTS RESERVED | Designed With <i style="color:#A2092F" class="fas fa-heart"></i> by Team HackInit</div>
+                             <li><a target="_blank" href="https://github.com/hackinitbpit/hackinitbpit.github.io/blob/master/code_of_conduct.md">Code of Conduct</a></li> 
+                             <li><a target="_blank" href="https://devfolio.co/code-of-conduct">Devfolio Code of Conduct</a></li> 
                         </ul>
                     </div>
                     <div class="col-lg-6">
-                        <div class="copyright-text copyright-text-s2">© HACKINIT 2019 ALL RIGHTS RESERVED | Designed With <i style="color:#A2092F" class="fas fa-heart"></i> by Team HackInit</div>
-                    </div>
+                            
+                        </div>
+            
                 </div>
             </div>
         </footer>
-  
+       
 
-    </main>
 
     
     <div class="nk-ovm nk-ovm-repeat nk-ovm-fixed shape-i">
@@ -1503,6 +1531,69 @@
     </div>
 
     <!-- JavaScript -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script>
+        //Scrolling JS
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a:not('.nav-link, .faq-li')").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        // window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
+        // Devfolio JS
+        document.addEventListener('DOMContentLoaded', function () {
+            let devfolioOptions = {
+                buttonSelector: '#devfolio-apply-now',
+                key: 'hackinit',
+            }
+            let script = document.createElement('script');
+            script.src = "https://apply.devfolio.co";
+            document.head.append(script);
+            script.onload = function () {
+                new Devfolio(devfolioOptions);
+            }
+            script.onerror = function () {
+                document.querySelector(devfolioOptions.buttonSelector).addEventListener('click',
+                    function () {
+                        window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions
+                            .key;
+
+                    });
+            }
+        });
+
+        // Lazy Loading Stuff
+        const observer = lozad('.lozad', {
+          loaded: function(el) {
+                // console.log("loaded...")
+                // console.log(el)
+              }
+          });
+          observer.observe();
+    </script>
+    
     <script src="assets/js/jquery.bundle.js?ver=161"></script>
     <script src="assets/js/scripts.js?ver=161"></script>
     <script src="assets/js/charts.js"></script>
